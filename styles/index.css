@@ -1,0 +1,130 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: sans-serif; 
+}
+
+.nav_header {
+    background-color: #f0f0f0; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_header em {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav_header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav_header nav li {
+    margin-left: 20px; 
+}
+
+.nav_header nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    position: relative; /* For positioning the hero content */
+    overflow: hidden; /* Prevents image overflow */
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Or contain, depending on your preference */
+}
+
+.hero-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content */
+    color: white; /* Text color */
+    text-align: center;
+    z-index: 1; /* Ensure text is above the image */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Set a maximum width */
+}
+
+.hero h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.featured {
+    padding: 40px;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.destination {
+  display: inline-block;
+  width: 30%; /* Adjust as needed */
+  margin: 1%;
+  vertical-align: top; /* Align items to the top */
+  text-align: left; /* Align text within each destination */
+}
+
+.destination img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.destination h3 {
+  margin-top: 10px;
+}
+
+.learn-more {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #eee;
+  color: #333;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
